@@ -108,9 +108,10 @@
         padding-bottom: 4px;
         border-radius: 2px;
       }
-      .video-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 40px;
-      }
+     .video-grid{
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       column-gap: 15px;
+       row-gap: 40px;
+       max-width: 1200px;
+     }
