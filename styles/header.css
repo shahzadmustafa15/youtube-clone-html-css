@@ -140,7 +140,9 @@
   padding: 4px 8px;
   border-radius: 2px;
 
-  bottom: -30px;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
 
   opacity: 0;
   transition: opacity 0.15s;
@@ -148,6 +150,7 @@
   white-space: nowrap;
 }
 
+/* SHOW TOOLTIP ON HOVER */
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip,
 .upload-icon-container:hover .tooltip,
@@ -157,15 +160,15 @@
   opacity: 1;
 }
 
-/* NOTIFICATION BADGE (FIXED) */
+/* NOTIFICATION BADGE */
 .notification-icon-container{
   position: relative;
 }
 
 .notifications-count{
   position: absolute;
-  top: -6px;
-  right: -6px;
+  top: -5px;
+  right: -5px;
 
   background-color: rgb(200, 13, 13);
   color: white;
@@ -173,7 +176,8 @@
   font-size: 11px;
   font-weight: 500;
 
-  border-radius: 50%;
+  border-radius: 10px;
+  padding: 2px 6px;
 
   min-width: 16px;
   height: 16px;
